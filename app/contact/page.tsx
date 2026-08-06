@@ -2,8 +2,17 @@ import Link from "next/link";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100">
-      <div className="mx-auto max-w-4xl px-6 py-20 sm:px-10">
+    <main className="relative min-h-screen overflow-hidden text-slate-100">
+      <div className="absolute inset-0">
+        <img
+          src="/img/IMG_2987.JPG"
+          alt="Contact background"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-slate-950/75" />
+      </div>
+
+      <div className="relative mx-auto max-w-4xl px-6 py-20 sm:px-10">
         <Link href="/" className="text-sm text-cyan-300 transition hover:text-white">
           ← Home
         </Link>
