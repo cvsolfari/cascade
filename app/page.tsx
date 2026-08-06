@@ -16,15 +16,11 @@ export default function Home() {
       </div>
 
       <section className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-20 sm:px-10">
-        <p className="text-sm uppercase tracking-[0.32em] text-cyan-300">
-          Corporate homepage
-        </p>
         <h1 className="mt-6 max-w-4xl text-5xl font-semibold leading-tight sm:text-6xl">
           Cascade Dynamics
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200/90">
-          Precision engineering and manufacturing solutions for industrial, energy,
-          and infrastructure applications.
+          engineering a new class of physics hardware at the intersection of light, matter, plasma, and charged particle beams
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <Link
