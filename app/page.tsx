@@ -20,18 +20,18 @@ export default function Home() {
           Cascade Dynamics
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200/90">
-          engineering a new class of physics hardware at the intersection of light, matter, plasma, and charged particle beams
+          Engineering a new class of physics hardware at the intersection of light, matter, plasma, and charged particle beams
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <Link
             href="/about"
-            className="inline-flex items-center justify-center rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
+            className="inline-flex items-center justify-center rounded-full border border-white/20 bg-slate-800/80 px-6 py-3 text-sm font-semibold text-white transition hover:border-transparent hover:bg-cyan-500 hover:text-white"
           >
             About
           </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
+            className="inline-flex items-center justify-center rounded-full border border-white/20 bg-slate-800/80 px-6 py-3 text-sm font-semibold text-white transition hover:border-transparent hover:bg-cyan-500 hover:text-white"
           >
             Contact
           </Link>

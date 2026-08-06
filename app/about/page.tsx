@@ -24,15 +24,9 @@ export default function AboutPage() {
 
         <div className="mt-10 space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/30 backdrop-blur-xl">
           <div>
-            <h2 className="text-2xl font-semibold text-white">Our Mission</h2>
+            <h2 className="text-2xl font-semibold text-white">Our Vision</h2>
             <p className="mt-4 text-slate-300 leading-8">
-              To create resilient systems that improve operational efficiency, reduce risk, and support long-term growth.
-            </p>
-          </div>
-          <div>
-            <h2 className="text-2xl font-semibold text-white">What We Do</h2>
-            <p className="mt-4 text-slate-300 leading-8">
-              From fabrication and assembly to automation and project execution, our team delivers industrial solutions with technical clarity.
+              Safe high energy ion discoveries.
             </p>
           </div>
         </div>
