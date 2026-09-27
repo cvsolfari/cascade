@@ -26,7 +26,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-2xl font-semibold text-white">Our Vision</h2>
             <p className="mt-4 text-slate-300 leading-8">
-              Safe high energy ion discoveries.
+              Any element, born with a high charge state.
             </p>
           </div>
         </div>
