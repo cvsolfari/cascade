@@ -19,7 +19,9 @@ export default function AboutPage() {
 
         <h1 className="mt-8 text-5xl font-semibold tracking-tight text-white">About Cascade Dynamics</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-          We are plasma physics and entrepreneurship experts combining to bring patent pending technology to the deep tech science market.
+         The SEE Testing market is at a crossroads today. With an exponential increase in satellites over the next ten years, a change to 3D electronics chips and governments wanting to privatize this market, the community is ripe for a step-function change in how we approach performing these tests or else American space dominance will fall behind.
+
+Since everything downstream from the ion beam’s birth state can never increase in quality, we focus on birthing higher charge state and higher energy ions to increase the effectiveness of current cyclotron SEE testing facilities as well as allow lower energy cyclotrons to become fit for purpose.
         </p>
 
         <div className="mt-10 space-y-8 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/30 backdrop-blur-xl">
