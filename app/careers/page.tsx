@@ -32,13 +32,13 @@ export default function CareersPage() {
           <ul className="border-t border-white/10">
             <li className="border-b border-white/10">
               <a
-                href="/jobs/CD-LNO.pdf"
+                href="/jobs/CD-CPP.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-center justify-between gap-6 py-6 transition hover:text-cyan-300"
               >
                 <span className="text-xl font-medium text-white group-hover:text-cyan-300">
-                  Laser-Matter Interaction &amp; Optical Engineer
+                  Computational Plasma Physicist - Ph.D
                 </span>
                 <span className="shrink-0 text-sm text-slate-400 group-hover:text-cyan-300">
                   View position <span aria-hidden="true">↗</span>
@@ -47,13 +47,13 @@ export default function CareersPage() {
             </li>
             <li className="border-b border-white/10">
               <a
-                href="/jobs/CD-CPP.pdf"
+                href="/jobs/CD-LNO.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-center justify-between gap-6 py-6 transition hover:text-cyan-300"
               >
                 <span className="text-xl font-medium text-white group-hover:text-cyan-300">
-                  Computational Plasma Physicist
+                  Laser-Matter Interaction &amp; Optical Engineer - Ph.D
                 </span>
                 <span className="shrink-0 text-sm text-slate-400 group-hover:text-cyan-300">
                   View position <span aria-hidden="true">↗</span>
