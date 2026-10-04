@@ -1,9 +1,18 @@
 const newsItems = [
   {
+    date: "2024-11",
+    month: "Nov",
+    title: "Patent Application Filed",
+    location: "Champaign, Illinois",
+    href: "/",
+    description:
+      "Patent application filed for High Density Ion Production Using a Dusty Plasma.",
+  },
+  {
     date: "2026-10",
     month: "Oct",
     title: "Founding Team Search",
-    location: "Champaign",
+    location: "Champaign, Illinois",
     href: "/careers",
     description: (
       <>
@@ -33,22 +42,22 @@ const newsItems = [
     location: "Prague, Czech Republic",
     href: "https://radecs2026.org/",
     description:
-      "Erik Ziehm attended the Radiation and its Effects on Components and Systems (RADECS) conference in Prague, joining the international radiation-effects community. Met lots of ECR operators and European radiation effects futurists.",
+      "Erik attended the Radiation and its Effects on Components and Systems (RADECS) conference in Prague, joining the international radiation-effects community. Met lots of ECR operators and European radiation effects futurists.",
   },
   {
     date: "2026-07",
     month: "Jul",
     title: "NSREC 2026",
-    location: "Puerto Rico",
+    location: "San Juan,Puerto Rico",
     href: "https://www.nsrec.com/nsrec-2026-schedule/",
     description:
-      "Erik Ziehm attended the IEEE Nuclear & Space Radiation Effects Conference (NSREC) in Puerto Rico, connecting with researchers and industry leaders in radiation effects. Learned about proton cyclotrons in action and the Vanderbilt Institute for space defense electronics.",
+      "Erik attended the IEEE Nuclear & Space Radiation Effects Conference (NSREC) in Puerto Rico, connecting with researchers and industry leaders in radiation effects. Learned about proton cyclotrons in action and the Vanderbilt Institute for space defense electronics.",
   },
   {
     date: "2026-06",
     month: "Jun",
     title: "ICOPS 2026",
-    location: "Lake Tahoe",
+    location: "Lake Tahoe, Nevada",
     href: "https://icops2026.org/",
     description:
       "Craig and Erik attended the IEEE International Conference on Plasma Science (ICOPS) in Lake Tahoe to speak with plasma physics experts, network with researchers in dusty plasmas and talk about low pressure plasma dynamics.",
