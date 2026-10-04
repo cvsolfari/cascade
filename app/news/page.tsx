@@ -1,14 +1,5 @@
 const newsItems = [
   {
-    date: "2024-11",
-    month: "Nov",
-    title: "Patent Application Filed",
-    location: "Champaign, Illinois",
-    href: "/",
-    description:
-      "Patent application filed for High Density Ion Production Using a Dusty Plasma.",
-  },
-  {
     date: "2026-10",
     month: "Oct",
     title: "Founding Team Search",
@@ -61,6 +52,15 @@ const newsItems = [
     href: "https://icops2026.org/",
     description:
       "Craig and Erik attended the IEEE International Conference on Plasma Science (ICOPS) in Lake Tahoe to speak with plasma physics experts, network with researchers in dusty plasmas and talk about low pressure plasma dynamics.",
+  },
+  {
+    date: "2024-11",
+    month: "Nov",
+    title: "Patent Application Filed",
+    location: "Champaign, Illinois",
+    href: "/",
+    description:
+      "Patent application filed for High Density Ion Production Using a Dusty Plasma.",
   },
 ];
 
