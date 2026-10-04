@@ -41,6 +41,9 @@ export default function Header() {
           <Link href="/about" className="transition hover:text-white">
             About
           </Link>
+          <Link href="/news" className="transition hover:text-white">
+            News
+          </Link>
           <Link href="/careers" className="transition hover:text-white">
             Careers
           </Link>
@@ -58,6 +61,9 @@ export default function Header() {
             </Link>
             <Link href="/about" className="block rounded-xl px-3 py-2 transition hover:bg-white/10 hover:text-white" onClick={() => setMenuOpen(false)}>
               About
+            </Link>
+            <Link href="/news" className="block rounded-xl px-3 py-2 transition hover:bg-white/10 hover:text-white" onClick={() => setMenuOpen(false)}>
+              News
             </Link>
             <Link href="/careers" className="block rounded-xl px-3 py-2 transition hover:bg-white/10 hover:text-white" onClick={() => setMenuOpen(false)}>
               Careers
