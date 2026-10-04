@@ -2,8 +2,8 @@ const newsItems = [
   {
     date: "2026-10",
     month: "Oct",
-    title: "Founding team hiring",
-    location: "Boulder, CO",
+    title: "Founding Team Search",
+    location: "Champaign",
     href: "/careers",
     description: (
       <>
