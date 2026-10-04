@@ -1,5 +1,32 @@
 const newsItems = [
   {
+    date: "2026-10",
+    month: "Oct",
+    title: "Founding team hiring",
+    location: "Boulder, CO",
+    href: "/careers",
+    description: (
+      <>
+        <p className="max-w-3xl leading-7 text-slate-300">
+          Cascade Dynamics is searching for two key technology additions as
+          members of the founding team.
+        </p>
+        <ul className="mt-3 space-y-2 text-slate-300">
+          <li>
+            <a href="/careers" className="text-cyan-300 transition hover:text-white">
+              Computational Plasma Physicist - Ph.D
+            </a>
+          </li>
+          <li>
+            <a href="/careers" className="text-cyan-300 transition hover:text-white">
+              Laser-Matter Interaction &amp; Optical Engineer - Ph.D
+            </a>
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
     date: "2026-09",
     month: "Sep",
     title: "RADECS 2026",
@@ -69,9 +96,13 @@ export default function NewsPage() {
                     {item.location}
                   </span>
                 </h2>
-                <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-                  {item.description}
-                </p>
+                <div className="mt-3 max-w-3xl">
+                  {typeof item.description === "string" ? (
+                    <p className="leading-7 text-slate-300">{item.description}</p>
+                  ) : (
+                    item.description
+                  )}
+                </div>
               </article>
             </li>
           ))}
