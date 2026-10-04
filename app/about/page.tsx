@@ -43,7 +43,7 @@ export default function AboutPage() {
             Since everything downstream from the ion beam’s birth can never increase in quality, we specialize in birthing higher charge state ions with higher baseline energies to increase the effectiveness of current cyclotron fed SEE testing facilities.
             </p>
             <p className="max-w-3xl text-lg leading-8 text-slate-300">
-            Because we begin with the highest charge state ions for any material, there are new opportunities to reinvent how ion beams are used. Contact us to collaborate on your most challenging problems.
+            Because we begin with the highest charge state ions for any element, new opportunities to use ion beams are created. Contact us to collaborate on your most challenging ion source problems.
             </p>
           </div>
         </div>
