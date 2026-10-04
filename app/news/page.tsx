@@ -17,6 +17,15 @@ const newsItems = [
     description:
       "Erik Ziehm attended the IEEE Nuclear & Space Radiation Effects Conference (NSREC) in Puerto Rico, connecting with researchers and industry leaders in radiation effects.",
   },
+  {
+    date: "2026-06",
+    month: "Jun",
+    title: "ICOPS 2026",
+    location: "Lake Tahoe",
+    href: "https://icops2026.org/",
+    description:
+      "Craig and Erik attended the IEEE International Conference on Plasma Science (ICOPS) in Lake Tahoe to speak with plasma physics experts.",
+  },
 ];
 
 export default function NewsPage() {
