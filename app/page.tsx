@@ -18,9 +18,17 @@ export default function Home() {
         <h1 className="mt-6 max-w-4xl text-5xl font-semibold leading-tight sm:text-6xl">
           Cascade Dynamics
         </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200/90">
-          Engineering a new class of physics hardware at the intersection of light, matter, plasma, and charged particle beams
-        </p>
+        <div className="mt-6 max-w-2xl text-lg leading-8 text-slate-200/90">
+          <blockquote className="border-l border-cyan-400/60 pl-4 italic text-slate-100">
+            “Do not go where the path may lead, go instead where there is no path and leave a trail.”
+          </blockquote>
+          <p className="mt-3 text-sm font-medium uppercase tracking-[0.18em] text-cyan-300">
+            — Ralph Waldo Emerson
+          </p>
+          <p className="mt-6">
+            Engineering a new class of physics hardware at the intersection of light, matter, plasma, and charged particle beams
+          </p>
+        </div>
       </section>
     </main>
   );
