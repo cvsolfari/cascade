@@ -6,7 +6,7 @@ const newsItems = [
     location: "Prague, Czech Republic",
     href: "https://radecs2026.org/",
     description:
-      "Erik Ziehm attended the Radiation and its Effects on Components and Systems (RADECS) conference in Prague, joining the international radiation-effects community.",
+      "Erik Ziehm attended the Radiation and its Effects on Components and Systems (RADECS) conference in Prague, joining the international radiation-effects community. Met lots of ECR operators and European radiation effects futurists.",
   },
   {
     date: "2026-07",
@@ -15,7 +15,7 @@ const newsItems = [
     location: "Puerto Rico",
     href: "https://www.nsrec.com/nsrec-2026-schedule/",
     description:
-      "Erik Ziehm attended the IEEE Nuclear & Space Radiation Effects Conference (NSREC) in Puerto Rico, connecting with researchers and industry leaders in radiation effects.",
+      "Erik Ziehm attended the IEEE Nuclear & Space Radiation Effects Conference (NSREC) in Puerto Rico, connecting with researchers and industry leaders in radiation effects. Learned about proton cyclotrons in action and the Vanderbilt Institute for space defense electronics.",
   },
   {
     date: "2026-06",
@@ -24,7 +24,7 @@ const newsItems = [
     location: "Lake Tahoe",
     href: "https://icops2026.org/",
     description:
-      "Craig and Erik attended the IEEE International Conference on Plasma Science (ICOPS) in Lake Tahoe to speak with plasma physics experts.",
+      "Craig and Erik attended the IEEE International Conference on Plasma Science (ICOPS) in Lake Tahoe to speak with plasma physics experts, network with researchers in dusty plasmas and talk about low pressure plasma dynamics.",
   },
 ];
 
