@@ -1,8 +1,14 @@
 export default function CareersPage() {
   return (
     <main className="relative min-h-screen overflow-hidden text-slate-100">
-      <div className="absolute inset-0 bg-slate-950" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(34,211,238,0.12),transparent_45%)]" />
+      <div className="absolute inset-0">
+        <img
+          src="/img/IMG_2980.JPG"
+          alt="Careers background"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-slate-950/70" />
+      </div>
 
       <div className="relative mx-auto max-w-5xl px-6 py-20 sm:px-10">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
