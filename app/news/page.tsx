@@ -2,7 +2,7 @@ const newsItems = [
   {
     date: "2026-10",
     month: "Oct",
-    title: "Founding Team Search",
+    title: "Founding Team Members Search",
     location: "Champaign, Illinois",
     href: "/careers",
     description: (
@@ -39,7 +39,7 @@ const newsItems = [
     date: "2026-07",
     month: "Jul",
     title: "NSREC 2026",
-    location: "San Juan,Puerto Rico",
+    location: "San Juan, Puerto Rico",
     href: "https://www.nsrec.com/nsrec-2026-schedule/",
     description:
       "Erik attended the IEEE Nuclear & Space Radiation Effects Conference (NSREC) in Puerto Rico, connecting with researchers and industry leaders in radiation effects. Learned about proton cyclotrons in action and the Vanderbilt Institute for space defense electronics.",
