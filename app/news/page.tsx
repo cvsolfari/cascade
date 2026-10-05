@@ -81,7 +81,7 @@ export default function NewsPage() {
           Updates
         </p>
         <h1 className="mt-4 text-5xl font-semibold tracking-tight text-white">
-          News
+          Latest Company News
         </h1>
 
         <ol className="mt-12 border-t border-white/15">
