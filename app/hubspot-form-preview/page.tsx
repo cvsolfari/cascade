@@ -23,12 +23,13 @@ export default function HubSpotFormPreviewPage() {
           Standalone preview of the embedded Cascade Dynamics form.
         </p>
 
-        <div className="mt-10 min-h-48 rounded-2xl bg-white p-6 text-slate-900 shadow-xl shadow-black/20 sm:p-8">
+        <div className="mt-10 min-h-48 rounded-2xl border border-white/10 bg-slate-900/80 p-6 text-slate-100 shadow-xl shadow-black/20 backdrop-blur-xl sm:p-8">
           <div
-            className="hs-form-frame"
+            className="hs-form-frame text-slate-100"
             data-region="na2"
             data-form-id="76c0a241-b68e-4444-83c4-c7c6b25079c5"
             data-portal-id="247836954"
+            style={{ colorScheme: "dark" }}
           />
         </div>
       </section>
