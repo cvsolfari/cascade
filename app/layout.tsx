@@ -41,6 +41,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           gtag('js', new Date());
           gtag('config', 'G-5733M45W9F', { send_page_view: true });`}
         </Script>
+        <Script
+          id="hs-script-loader"
+          src="https://js-na2.hs-scripts.com/247836954.js"
+          strategy="afterInteractive"
+        />
         <div className="flex min-h-screen flex-col">
           <Header />
           {children}
