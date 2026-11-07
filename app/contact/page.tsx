@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 
 export default function ContactPage() {
   return (
@@ -78,6 +79,17 @@ export default function ContactPage() {
             </div>
           </a>
         </div>
+
+        <Script
+          src="https://js-na2.hsforms.net/forms/embed/247836954.js"
+          strategy="afterInteractive"
+        />
+        <div
+          className="hs-form-frame mt-10"
+          data-region="na2"
+          data-form-id="76c0a241-b68e-4444-83c4-c7c6b25079c5"
+          data-portal-id="247836954"
+        />
       </div>
     </main>
   );
