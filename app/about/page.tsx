@@ -48,61 +48,64 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-10 space-y-4">
-          <a
-            href="https://www.linkedin.com/in/erikziehm/"
-            target="_blank"
-            rel="noreferrer"
-            className="group block rounded-3xl border border-cyan-500/15 bg-slate-900/80 p-6 transition hover:border-cyan-400/40 hover:bg-slate-900/95"
-          >
-            <div className="flex items-center gap-3">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-cyan-500 text-sm font-bold text-slate-950">
-                in
-              </span>
-              <div>
-                <p className="text-sm uppercase tracking-[0.3em] text-cyan-200">Erik Ziehm</p>
-                <p className="mt-2 text-slate-300 transition group-hover:text-white">
-                  linkedin.com/in/erikziehm
-                </p>
+        <div className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/30 backdrop-blur-xl">
+          <h2 className="text-2xl font-semibold text-white">Connect with us</h2>
+          <div className="mt-6 space-y-3">
+            <a
+              href="https://www.linkedin.com/in/erikziehm/"
+              target="_blank"
+              rel="noreferrer"
+              className="group block rounded-3xl border border-cyan-500/15 bg-slate-900/80 p-4 transition hover:border-cyan-400/40 hover:bg-slate-900/95"
+            >
+              <div className="flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-cyan-500 text-sm font-bold text-slate-950">
+                  in
+                </span>
+                <div>
+                  <p className="text-sm uppercase tracking-[0.3em] text-cyan-200">Erik Ziehm</p>
+                  <p className="mt-2 text-slate-300 transition group-hover:text-white">
+                    linkedin.com/in/erikziehm
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/craigvodnik/"
-            target="_blank"
-            rel="noreferrer"
-            className="group block rounded-3xl border border-cyan-500/15 bg-slate-900/80 p-6 transition hover:border-cyan-400/40 hover:bg-slate-900/95"
-          >
-            <div className="flex items-center gap-3">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-cyan-500 text-sm font-bold text-slate-950">
-                in
-              </span>
-              <div>
-                <p className="text-sm uppercase tracking-[0.3em] text-cyan-200">Craig Vodnik</p>
-                <p className="mt-2 text-slate-300 transition group-hover:text-white">
-                  linkedin.com/in/craigvodnik
-                </p>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/craigvodnik/"
+              target="_blank"
+              rel="noreferrer"
+              className="group block rounded-3xl border border-cyan-500/15 bg-slate-900/80 p-4 transition hover:border-cyan-400/40 hover:bg-slate-900/95"
+            >
+              <div className="flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-cyan-500 text-sm font-bold text-slate-950">
+                  in
+                </span>
+                <div>
+                  <p className="text-sm uppercase tracking-[0.3em] text-cyan-200">Craig Vodnik</p>
+                  <p className="mt-2 text-slate-300 transition group-hover:text-white">
+                    linkedin.com/in/craigvodnik
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-          <a
-            href="https://www.linkedin.com/company/cascadedynamics"
-            target="_blank"
-            rel="noreferrer"
-            className="group block rounded-3xl border border-blue-500/15 bg-slate-900/80 p-6 transition hover:border-blue-400/40 hover:bg-slate-900/95"
-          >
-            <div className="flex items-center gap-3">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-500 text-sm font-bold text-white">
-                Co
-              </span>
-              <div>
-                <p className="text-sm uppercase tracking-[0.3em] text-blue-200">Company</p>
-                <p className="mt-2 text-slate-300 transition group-hover:text-white">
-                  linkedin.com/company/cascadedynamics
-                </p>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/cascadedynamics"
+              target="_blank"
+              rel="noreferrer"
+              className="group block rounded-3xl border border-blue-500/15 bg-slate-900/80 p-4 transition hover:border-blue-400/40 hover:bg-slate-900/95"
+            >
+              <div className="flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-500 text-sm font-bold text-white">
+                  Co
+                </span>
+                <div>
+                  <p className="text-sm uppercase tracking-[0.3em] text-blue-200">Company</p>
+                  <p className="mt-2 text-slate-300 transition group-hover:text-white">
+                    linkedin.com/company/cascadedynamics
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </main>
