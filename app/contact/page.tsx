@@ -20,7 +20,7 @@ export default function ContactPage() {
 
         <h1 className="mt-8 text-5xl font-semibold tracking-tight text-white">Contact Cascade Dynamics</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-          Send us a message using the form below.
+          Sign up for one of our newsletters below to stay up to date on the latest news and updates.
         </p>
 
         <Script
