@@ -16,8 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cascade Dynamics",
-  description: "Corporate site for Cascade Dynamics",
+  metadataBase: new URL("https://www.cascade-dynamics.com"),
+  title: {
+    default: "Cascade Dynamics",
+    template: "%s | Cascade Dynamics",
+  },
+  description:
+    "Cascade Dynamics develops high-charge-state, high-energy ion source technology to advance single-event-effects testing for space electronics.",
   robots: {
     index: true,
     follow: true,
