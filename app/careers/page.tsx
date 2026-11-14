@@ -59,7 +59,7 @@ export default function CareersPage() {
                 className="group flex items-center justify-between gap-6 py-6 transition hover:text-cyan-300"
               >
                 <span className="text-xl font-medium text-white group-hover:text-cyan-300">
-                  Laser-Matter Interaction &amp; Optical Engineer - Ph.D
+                  Laser-Matter Interaction &amp; Optics Engineer - Ph.D
                 </span>
                 <span className="shrink-0 text-sm text-slate-400 group-hover:text-cyan-300">
                   View position <span aria-hidden="true">↗</span>
