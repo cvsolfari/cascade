@@ -27,6 +27,15 @@ const newsItems = [
     ),
   },
   {
+    date: "2026-11",
+    month: "Nov",
+    title: "Steve Lidia Joins Cascade Dynamics as Scientific Advisor",
+    location: "East Lansing, Michigan",
+    href: "/about",
+    description:
+      "FRIB Radiation Effects Facility Manager, Steve Lidia, joins Cascade Dynamics as a scientific advisor to support planning of first physics product. Steve has a Ph.D. in Physics and was a longtime Staff Scientist at Lawrence Berkeley National Laboratory.",
+  },
+  {
     date: "2026-09",
     month: "Sep",
     title: "RADECS 2026",
