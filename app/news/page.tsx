@@ -1,5 +1,14 @@
 const newsItems = [
   {
+    date: "2026-11",
+    month: "Nov",
+    title: "Steve Lidia Joins Cascade Dynamics as Scientific Advisor",
+    location: "East Lansing, Michigan",
+    href: "/about",
+    description:
+      "FRIB Radiation Effects Facility Manager, Steve Lidia, joins Cascade Dynamics as a scientific advisor to support planning of first physics product. Steve has a Ph.D. in Physics and was a longtime Staff Scientist at Lawrence Berkeley National Laboratory.",
+  },
+  {
     date: "2026-10",
     month: "Oct",
     title: "Founding Team Members Search",
@@ -25,15 +34,6 @@ const newsItems = [
         </ul>
       </>
     ),
-  },
-  {
-    date: "2026-11",
-    month: "Nov",
-    title: "Steve Lidia Joins Cascade Dynamics as Scientific Advisor",
-    location: "East Lansing, Michigan",
-    href: "/about",
-    description:
-      "FRIB Radiation Effects Facility Manager, Steve Lidia, joins Cascade Dynamics as a scientific advisor to support planning of first physics product. Steve has a Ph.D. in Physics and was a longtime Staff Scientist at Lawrence Berkeley National Laboratory.",
   },
   {
     date: "2026-09",
@@ -65,7 +65,7 @@ const newsItems = [
   {
     date: "2025-11",
     month: "Nov",
-    title: "Company Founding Completed",
+    title: "Cascade Dynamics Incorporated",
     location: "Champaign, Illinois",
     href: "/",
     description:
