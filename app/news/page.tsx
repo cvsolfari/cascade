@@ -63,6 +63,15 @@ const newsItems = [
       "Craig and Erik attended the IEEE International Conference on Plasma Science (ICOPS) in Lake Tahoe to speak with plasma physics experts, network with researchers in dusty plasmas and talk about low pressure plasma dynamics.",
   },
   {
+    date: "2025-11",
+    month: "Nov",
+    title: "Company Founding Completed",
+    location: "Champaign, Illinois",
+    href: "/",
+    description:
+      "Cascade Dynamics completed its company founding in Champaign, Illinois.",
+  },
+  {
     date: "2024-11",
     month: "Nov",
     title: "Patent Application Filed",
