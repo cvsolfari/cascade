@@ -385,6 +385,17 @@ export default function ApplicationsPage() {
                   </p>
                 </div>
               </Link>
+              <Link
+                href="/high-charge-state-ions/ion-source-technologies"
+                className="flex items-center justify-between rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.07] px-6 py-5 transition hover:border-cyan-300/40 hover:bg-cyan-400/[0.10]"
+              >
+                <div>
+                  <p className="text-sm text-slate-400">Technology comparison</p>
+                  <p className="mt-1 font-semibold text-white">
+                    ECR, EBIS, Strippers &amp; Vacuum Arcs
+                  </p>
+                </div>
+              </Link>
             </div>
           </section>
 

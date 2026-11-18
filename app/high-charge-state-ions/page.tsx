@@ -486,6 +486,18 @@ export default function HighChargeStateIonsPage() {
                 </div>
                 <span aria-hidden="true" className="ml-4 text-xl text-cyan-300">→</span>
               </Link>
+              <Link
+                href="/high-charge-state-ions/ion-source-technologies"
+                className="flex items-center justify-between rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.07] px-6 py-5 transition hover:border-cyan-300/40 hover:bg-cyan-400/[0.10]"
+              >
+                <div>
+                  <p className="text-sm text-slate-400">Source technologies</p>
+                  <p className="mt-1 font-semibold text-white">
+                    Comparing ECR, EBIS, Strippers &amp; Vacuum Arcs
+                  </p>
+                </div>
+                <span aria-hidden="true" className="ml-4 text-xl text-cyan-300">→</span>
+              </Link>
             </div>
           </section>
 

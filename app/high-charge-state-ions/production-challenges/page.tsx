@@ -329,6 +329,15 @@ export default function ProductionChallengesPage() {
                   <p className="mt-1 font-semibold text-white">What Are High-Charge-State Ions?</p>
                 </div>
               </Link>
+              <Link
+                href="/high-charge-state-ions/ion-source-technologies"
+                className="flex items-center justify-between rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.07] px-6 py-5 transition hover:border-cyan-300/40 hover:bg-cyan-400/[0.10]"
+              >
+                <div>
+                  <p className="text-sm text-slate-400">Next →</p>
+                  <p className="mt-1 font-semibold text-white">Compare Ion Source Technologies</p>
+                </div>
+              </Link>
             </div>
           </section>
 
