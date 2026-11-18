@@ -2,60 +2,59 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title:
-    "High-Charge-State Ion Injection: q/A Scaling, Rigidity & Accelerator Performance",
+  title: "What Are High-Charge-State Ions? Accelerator Physics & Scaling",
   description:
-    "Technical analysis of high-charge-state ion injection for particle accelerators, covering q/A scaling, magnetic rigidity, space-charge limits, and stripper foil losses.",
+    "Learn what high-charge-state ions are, how increasing ion charge from +1 or +6 to +10+ multiplies accelerator energy, and why high-charge-state beams shrink facility size and cost.",
   keywords: [
-    "high charge state ion injection",
-    "charge-to-mass ratio accelerator design",
-    "cyclotron K-value q^2/A scaling",
-    "magnetic rigidity heavy ions",
-    "electrical vs particle microamps",
+    "high charge state ions",
+    "multiply charged ions",
+    "charge-to-mass ratio accelerator",
+    "cyclotron energy scaling q^2",
+    "heavy ion beam energy",
   ],
 };
 
 const comparisonRows = [
   {
-    parameter: "Extraction energy at 100 kV (E = qV)",
+    metric: "Energy at 100 kV extraction (E = qV)",
     one: "0.10 MeV",
     six: "0.60 MeV",
     ten: "1.00 MeV",
-    impact: "+67% higher injection energy",
+    gain: "+67% higher energy",
   },
   {
-    parameter: "Effective linac voltage for 10 MeV",
-    one: "10.0 MV",
-    six: "1.67 MV",
-    ten: "1.00 MV",
-    impact: "40% reduction in voltage/cavity count",
+    metric: "Voltage needed for 1 MeV beam",
+    one: "1,000 kV",
+    six: "167 kV",
+    ten: "100 kV",
+    gain: "40% lower voltage",
   },
   {
-    parameter: "Cyclotron energy scaling factor (q2)",
-    one: "1x",
-    six: "36x",
-    ten: "100x",
-    impact: "2.78x higher MeV/u on the same magnet",
+    metric: "Cyclotron energy scaling (q²)",
+    one: "1×",
+    six: "36×",
+    ten: "100×",
+    gain: "2.78× higher output",
   },
   {
-    parameter: "Magnetic rigidity at fixed momentum",
+    metric: "Required magnetic bending field",
     one: "100%",
     six: "16.7%",
     ten: "10.0%",
-    impact: "40% lower B rho",
+    gain: "40% less rigidity",
   },
   {
-    parameter: "Stripper foil / gas cell requirement",
-    one: "Mandatory",
-    six: "Often required",
-    ten: "Eliminated",
-    impact: "Avoids 85–95% charge-state loss",
+    metric: "Downstream stripping losses",
+    one: "High",
+    six: "Moderate",
+    ten: "Minimal to none",
+    gain: "Higher usable current",
   },
 ];
 
 function Formula({ children }: { children: ReactNode }) {
   return (
-    <div className="my-6 rounded-2xl border border-cyan-400/15 bg-slate-950/70 px-5 py-5 font-mono text-base text-cyan-100 shadow-lg shadow-cyan-950/10 sm:px-7">
+    <div className="my-6 rounded-2xl border border-cyan-400/15 bg-slate-950/70 px-5 py-5 font-mono text-lg text-cyan-100 shadow-lg shadow-cyan-950/10 sm:px-7">
       {children}
     </div>
   );
@@ -75,9 +74,7 @@ function SectionHeading({
       id={id}
       className="scroll-mt-28 border-b border-white/10 pb-4 text-2xl font-semibold tracking-tight text-white sm:text-3xl"
     >
-      <span className="mr-3 font-mono text-sm font-semibold text-cyan-300">
-        {number}
-      </span>
+      <span className="mr-3 font-mono text-sm text-cyan-300">{number}</span>
       {children}
     </h2>
   );
@@ -89,52 +86,44 @@ export default function HighChargeStateIonsPage() {
       <header className="border-b border-white/10 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.16),_transparent_38%)]">
         <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
-            Technical Pillar
+            High-Charge-State Ion Fundamentals
           </p>
           <h1 className="mt-5 max-w-5xl text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-6xl">
-            High-Charge-State Ion Injection: <span className="text-cyan-200">q/A</span> Scaling,
-            Rigidity, and Accelerator Performance
+            What Are High-Charge-State Ions and Why Do They Matter?
           </h1>
           <aside className="mt-8 max-w-4xl rounded-3xl border border-cyan-400/20 bg-cyan-400/[0.07] p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">
-              Executive Summary
+              Quick Summary
             </p>
             <p className="mt-3 text-base leading-8 text-slate-200 sm:text-lg">
-              For accelerator physicists and beamline engineers, elevating the front-end ion
-              charge state (q) is the highest-leverage method for increasing terminal beam
-              energy without scaling up magnet mass, RF power, or linac length. Increasing q/A
-              reduces magnetic rigidity, compresses RFQ and DTL synchronous velocity profiles,
-              scales cyclotron output energy quadratically, and eliminates lossy intermediate
-              stripping stages—though it introduces tighter space-charge extraction and LEBT
-              emittance constraints.
+              <strong className="text-white">High-charge-state ions</strong>, also called multiply
+              charged ions, are atoms stripped of multiple electrons (q &gt; 1+), leaving a strong
+              net positive charge. Because particle accelerators push ions using electric and
+              magnetic fields, higher charge states act as a direct energy multiplier—enabling
+              existing accelerators to reach higher beam energies or allowing new systems to be
+              smaller, more compact, and lower cost.
             </p>
           </aside>
         </div>
       </header>
 
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[13rem_minmax(0,1fr)]">
-        <nav
-          aria-label="Technical page sections"
-          className="hidden lg:block"
-        >
+        <nav aria-label="Technical page sections" className="hidden lg:block">
           <div className="sticky top-28 rounded-2xl border border-white/10 bg-white/[0.035] p-5">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">
               On this page
             </p>
             <ol className="mt-4 space-y-3 text-sm">
               {[
-                ["#q-a-scaling", "q/A scaling"],
-                ["#quantifying-the-upgrade", "The upgrade"],
-                ["#magnetic-rigidity", "Rigidity"],
-                ["#stripper-losses", "Stripper losses"],
-                ["#extraction-tradeoffs", "Extraction limits"],
+                ["#definition", "Definition"],
+                ["#energy-scaling", "Energy scaling"],
+                ["#upgrade", "1+ vs. 6+ vs. 10+"],
+                ["#infrastructure", "Size and cost"],
                 ["#faq", "FAQ"],
+                ["#references", "References"],
               ].map(([href, label]) => (
                 <li key={href}>
-                  <a
-                    href={href}
-                    className="block text-slate-300 transition hover:text-cyan-300"
-                  >
+                  <a href={href} className="block text-slate-300 transition hover:text-cyan-300">
                     {label}
                   </a>
                 </li>
@@ -145,121 +134,204 @@ export default function HighChargeStateIonsPage() {
 
         <article className="min-w-0 space-y-16">
           <section>
-            <SectionHeading number="01" id="q-a-scaling">
-              Charge-to-Mass Ratio (q/A) and Accelerator Scaling Laws
+            <SectionHeading number="01" id="definition">
+              How Are High-Charge-State Ions Defined?
             </SectionHeading>
             <div className="mt-7 space-y-6 text-lg leading-8 text-slate-300">
               <p>
-                In heavy-ion accelerator design, performance is dictated by the injected ion&apos;s{" "}
-                <strong className="text-white">charge-to-mass ratio (q/A)</strong>. Heavy nuclei
-                (A ≥ 40) carry substantial rest-mass inertia; injecting them at low charge states
-                forces downstream structures to compensate with higher accelerating gradients,
-                longer drift tubes, or massive dipole bending fields.
+                In a neutral atom, negatively charged electrons balance positively charged protons
+                in the nucleus. Removing one outer electron creates a{" "}
+                <strong className="text-white">singly charged ion (1+)</strong>. Removing two,
+                ten, or dozens of electrons creates a{" "}
+                <strong className="text-white">high-charge-state ion (q+)</strong>.
               </p>
-
-              <h3 className="pt-3 text-xl font-semibold text-white">
-                Electrostatic and RF Linear Accelerators (E = qV)
-              </h3>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.035] p-6">
+                  <p className="text-sm font-semibold uppercase tracking-[0.15em] text-cyan-300">
+                    Light ions
+                  </p>
+                  <p className="mt-3 leading-7">
+                    Stripping all electrons from Carbon or Oxygen yields bare nuclei such as C
+                    <sup>6+</sup> and O<sup>8+</sup>.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.035] p-6">
+                  <p className="text-sm font-semibold uppercase tracking-[0.15em] text-cyan-300">
+                    Heavy metallic ions
+                  </p>
+                  <p className="mt-3 leading-7">
+                    Stripping Iron, Gold, Lead, Bismuth, or Uranium produces multiply charged ions
+                    ranging from 6+ and 10+ up to 30+ or higher.
+                  </p>
+                </div>
+              </div>
               <p>
-                Across an electrostatic extraction gap or RF accelerating cavity, total kinetic
-                energy scales linearly with charge state:
-              </p>
-              <Formula>E = q · V<sub>eff</sub></Formula>
-              <p>
-                More critically for Radio-Frequency Quadrupole (RFQ) and Drift-Tube Linac (DTL)
-                front ends, higher q/A directly increases the ion velocity (β = v/c) at a fixed
-                extraction potential:
-              </p>
-              <Formula>β ≈ 1.46 × 10<sup>-3</sup> √(q · U / A)</Formula>
-              <p>
-                Here, U is the extraction voltage in kV. Higher initial β lengthens the first RFQ
-                cell periods (βλ/2), relaxing machining tolerances, lowering surface electric field
-                stress, and reducing overall linac real estate for a target MeV/u output.
-              </p>
-
-              <h3 className="pt-3 text-xl font-semibold text-white">
-                Isochronous &amp; Superconducting Cyclotrons (E<sub>max</sub> = K · q²/A)
-              </h3>
-              <p>
-                In circular accelerators bounded by magnet pole radius (R) and maximum flux density
-                (B<sub>max</sub>), non-relativistic output energy per nucleon scales with the square
-                of the charge-to-mass ratio:
-              </p>
-              <Formula>E<sub>max</sub> / A = K · (q / A)<sup>2</sup></Formula>
-              <Formula>K = (e · B<sub>max</sub> · R)<sup>2</sup> / (2 · m<sub>u</sub>)</Formula>
-              <p>
-                Because energy scales as q², incremental gains in front-end charge state yield
-                non-linear returns on existing cyclotron infrastructure without modifying the main
-                magnet or RF dee geometry.
+                Beam performance is governed by the ion&apos;s{" "}
+                <strong className="text-white">charge-to-mass ratio (q/A)</strong>, where q is the
+                net positive charge and A is the atomic mass number. Heavy atoms carry high mass,
+                making them sluggish to accelerate unless they also carry a high positive charge.
+                Increasing q directly increases the electromagnetic “handle” an accelerator can
+                use to push and steer the particle.
               </p>
             </div>
 
             <figure className="mt-8 overflow-hidden rounded-3xl border border-dashed border-cyan-400/30 bg-slate-900/50">
-              <div className="grid min-h-64 md:grid-cols-2">
-                <div className="flex flex-col justify-between border-b border-cyan-400/15 p-7 md:border-r md:border-b-0">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
-                      Figure 1 · Linac scaling
-                    </p>
-                    <p className="mt-3 text-sm text-slate-400">
-                      Extraction velocity and required effective voltage
-                    </p>
-                  </div>
-                  <div className="mt-8 flex h-32 items-end gap-3" aria-hidden="true">
-                    {[28, 38, 48, 59, 71, 84, 96].map((height, index) => (
-                      <div
-                        key={index}
-                        className="flex-1 rounded-t bg-gradient-to-t from-cyan-700 to-cyan-300"
-                        style={{ height: `${height}%` }}
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div className="flex flex-col justify-between p-7">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
-                      Figure 1 · Cyclotron scaling
-                    </p>
-                    <p className="mt-3 text-sm text-slate-400">
-                      Output energy versus charge state at fixed K-value
-                    </p>
-                  </div>
-                  <svg
-                    viewBox="0 0 500 180"
-                    role="img"
-                    aria-label="Placeholder engineering plot showing quadratic cyclotron energy scaling with ion charge state"
-                    className="mt-8 w-full"
+              <div className="grid md:grid-cols-3">
+                {[
+                  ["Neutral Au⁰", "Nucleus + 79 electrons", "1×"],
+                  ["Au¹⁺", "One electron removed", "1×"],
+                  ["Au¹⁰⁺", "Ten electrons removed", "10×"],
+                ].map(([title, detail, grip], index) => (
+                  <div
+                    key={title}
+                    className={`p-7 ${
+                      index < 2 ? "border-b border-cyan-400/15 md:border-r md:border-b-0" : ""
+                    }`}
                   >
-                    <path d="M20 160H480M20 160V20" fill="none" stroke="rgba(148,163,184,.25)" />
-                    <path d="M22 158C120 154 220 142 305 112C390 82 430 48 478 22" fill="none" stroke="#67e8f9" strokeWidth="5" />
-                    {[22, 100, 180, 260, 340, 420, 478].map((x) => (
-                      <circle key={x} cx={x} cy={x === 478 ? 22 : 158 - (x - 22) * 0.34} r="4" fill="#a5f3fc" />
-                    ))}
-                  </svg>
-                </div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
+                      Charge state {index + 1}
+                    </p>
+                    <div className="mt-5 flex h-28 items-center justify-center">
+                      <div
+                        className="relative h-20 w-20 rounded-full border-2 border-cyan-300/60"
+                        style={{ boxShadow: index === 2 ? "0 0 35px rgba(34,211,238,.22)" : undefined }}
+                        aria-hidden="true"
+                      >
+                        <div className="absolute inset-5 rounded-full bg-cyan-300/20" />
+                        {index > 0 && (
+                          <div className="absolute -right-3 top-1 h-2 w-2 rounded-full bg-cyan-200" />
+                        )}
+                        {index === 2 && (
+                          <>
+                            <div className="absolute -left-3 top-7 h-2 w-2 rounded-full bg-cyan-200" />
+                            <div className="absolute bottom-0 right-1 h-2 w-2 rounded-full bg-cyan-200" />
+                          </>
+                        )}
+                      </div>
+                    </div>
+                    <p className="text-center font-semibold text-white">{title}</p>
+                    <p className="mt-2 text-center text-sm text-slate-400">{detail}</p>
+                    <p className="mt-4 text-center font-mono text-xl text-cyan-200">
+                      Electromagnetic grip: {grip}
+                    </p>
+                  </div>
+                ))}
               </div>
               <figcaption className="border-t border-white/10 px-7 py-5 text-sm leading-6 text-slate-400">
-                Figure 1 placeholder: two-panel engineering plot for a heavy species across charge
-                states q = 1+ to 25+, showing extraction beta and cyclotron MeV/u output.
+                Figure 1: neutral atom, singly charged ion, and high-charge-state ion. Stripping
+                more electrons increases the electromagnetic acceleration force in the same field.
               </figcaption>
             </figure>
           </section>
 
           <section>
-            <SectionHeading number="02" id="quantifying-the-upgrade">
-              Quantifying the Upgrade: 1+ vs. 6+ vs. 10+ Front Ends
+            <SectionHeading number="02" id="energy-scaling">
+              How Does Charge State Multiply Particle Accelerator Energy?
+            </SectionHeading>
+            <div className="mt-7 space-y-8 text-lg leading-8 text-slate-300">
+              <div>
+                <h3 className="text-xl font-semibold text-white">
+                  Linear and Electrostatic Acceleration (E = qV)
+                </h3>
+                <p className="mt-4">
+                  In an electrostatic accelerating gap or linear accelerator, kinetic energy gained
+                  by an ion is the product of its charge state and the accelerating voltage:
+                </p>
+                <Formula>E = q · V</Formula>
+                <ul className="mt-5 space-y-3 rounded-2xl border border-white/10 bg-white/[0.035] p-6">
+                  <li><strong className="text-white">1+ ion:</strong> Through 100 kV, gains 0.1 MeV.</li>
+                  <li><strong className="text-white">6+ ion:</strong> Through 100 kV, gains 0.6 MeV.</li>
+                  <li><strong className="text-white">10+ ion:</strong> Through 100 kV, gains 1.0 MeV—a tenfold increase over 1+.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-white">
+                  Cyclotron Energy Scaling (E = K · q²/A)
+                </h3>
+                <p className="mt-4">
+                  In circular accelerators such as cyclotrons, higher-charge ions experience stronger
+                  inward magnetic bending forces and can be confined at higher velocities within the
+                  same magnet radius.
+                </p>
+                <Formula>E<sub>max</sub> = K · (q² / A)</Formula>
+                <p>
+                  K is the cyclotron bending-limit constant determined by its magnet size and field
+                  strength, while A is the ion&apos;s mass number. Higher charge therefore produces
+                  nonlinear returns from the same core infrastructure.
+                </p>
+              </div>
+            </div>
+
+            <figure className="mt-8 overflow-hidden rounded-3xl border border-dashed border-cyan-400/30 bg-slate-900/50">
+              <div className="grid md:grid-cols-2">
+                <div className="border-b border-cyan-400/15 p-7 md:border-r md:border-b-0">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
+                    Linear scaling
+                  </p>
+                  <p className="mt-3 text-sm text-slate-400">Beam energy at 100 kV extraction</p>
+                  <div className="mt-7 flex h-36 items-end gap-5">
+                    {[30, 58, 92].map((height, index) => (
+                      <div key={index} className="flex flex-1 flex-col items-center justify-end">
+                        <span className="mb-2 font-mono text-sm text-cyan-100">
+                          {[0.1, 0.6, 1.0][index]} MeV
+                        </span>
+                        <div
+                          className="w-full rounded-t bg-gradient-to-t from-cyan-700 to-cyan-300"
+                          style={{ height: `${height}%` }}
+                        />
+                        <span className="mt-2 text-sm text-slate-400">
+                          {[1, 6, 10][index]}+
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="p-7">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
+                    Cyclotron scaling
+                  </p>
+                  <p className="mt-3 text-sm text-slate-400">Relative output energy</p>
+                  <div className="mt-7 grid grid-cols-3 items-end gap-5">
+                    {[
+                      ["1×", "1+"],
+                      ["36×", "6+"],
+                      ["100×", "10+"],
+                    ].map(([value, charge], index) => (
+                      <div key={charge} className="text-center">
+                        <p className="font-mono text-xl text-cyan-100">{value}</p>
+                        <div
+                          className="mt-3 mx-auto w-full rounded-t bg-gradient-to-t from-cyan-800 to-cyan-300"
+                          style={{ height: `${[24, 58, 112][index]}px` }}
+                        />
+                        <p className="mt-2 text-sm text-slate-400">{charge}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <figcaption className="border-t border-white/10 px-7 py-5 text-sm leading-6 text-slate-400">
+                Figure 2: linear energy scaling in a fixed-voltage linac and quadratic cyclotron
+                scaling across 1+, 6+, and 10+ ions.
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <SectionHeading number="03" id="upgrade">
+              Upgrading Existing Infrastructure: 1+ vs. 6+ vs. 10+
             </SectionHeading>
             <p className="mt-7 text-lg leading-8 text-slate-300">
-              Replacing a 1+ source yields an order-of-magnitude reduction in electrostatic voltage.
-              Many operational heavy-ion facilities already use conventional sources delivering
-              intermediate states around 6+. Stepping up to 10+ or higher fundamentally alters
-              downstream beamline and accelerator economics.
+              Replacing a singly charged source gives an obvious tenfold jump in electrostatic
+              energy. However, facilities already operating conventional multi-charge sources
+              producing 6+ ions can still gain transformative performance by reaching 10+ or
+              higher. Moving from 6+ to 10+ nearly triples maximum beam energy on the same magnet.
             </p>
             <div className="-mx-6 mt-8 overflow-x-auto px-6 sm:mx-0 sm:px-0">
               <table className="w-full min-w-[760px] border-separate border-spacing-0 text-left text-sm">
                 <thead>
                   <tr className="text-cyan-100">
-                    {["Accelerator / beamline parameter", "1+", "6+", "10+", "6+ → 10+ impact"].map((heading) => (
+                    {["Performance metric", "1+ source", "6+ source", "10+ source", "6+ → 10+ gain"].map((heading) => (
                       <th key={heading} className="border-b border-cyan-400/20 px-4 py-3 font-semibold">
                         {heading}
                       </th>
@@ -268,71 +340,43 @@ export default function HighChargeStateIonsPage() {
                 </thead>
                 <tbody>
                   {comparisonRows.map((row) => (
-                    <tr key={row.parameter} className="text-slate-300">
-                      <td className="border-b border-white/[0.08] px-4 py-4 font-medium text-white">{row.parameter}</td>
+                    <tr key={row.metric} className="text-slate-300">
+                      <td className="border-b border-white/[0.08] px-4 py-4 font-medium text-white">{row.metric}</td>
                       <td className="border-b border-white/[0.08] px-4 py-4">{row.one}</td>
                       <td className="border-b border-white/[0.08] px-4 py-4">{row.six}</td>
                       <td className="border-b border-white/[0.08] px-4 py-4 text-cyan-200">{row.ten}</td>
-                      <td className="border-b border-white/[0.08] px-4 py-4">{row.impact}</td>
+                      <td className="border-b border-white/[0.08] px-4 py-4">{row.gain}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-
             <aside className="mt-8 border-l-2 border-cyan-400/70 bg-cyan-400/[0.05] px-6 py-5">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
-                Practical operational consequence
+                Facility impact
               </p>
-              <p className="mt-3 text-base leading-7 text-slate-300">
-                In Single Event Effects (SEE) radiation testing, thick 3D stacked microelectronics
-                require heavy-ion beams with higher MeV/u to achieve deeper silicon penetration
-                ranges. Upgrading an existing cyclotron&apos;s front-end source from 6+ to 10+ can
-                nearly triple maximum beam energy on the existing magnet, converting a medium-energy
-                beamline into a deep-penetration test facility without civil construction or magnet
-                replacement.
+              <p className="mt-3 leading-7 text-slate-300">
+                Increasing the front-end charge state from 6+ to 10+ turns an existing medium-energy
+                beamline into a higher-penetration system—unlocking deeper material testing without
+                constructing a larger accelerator.
               </p>
             </aside>
           </section>
 
           <section>
-            <SectionHeading number="03" id="magnetic-rigidity">
-              Magnetic Rigidity (Bρ) and Low-Energy Beam Transport
-            </SectionHeading>
-            <div className="mt-7 space-y-6 text-lg leading-8 text-slate-300">
-              <p>
-                An ion&apos;s resistance to magnetic deflection—its magnetic rigidity (Bρ)—is governed
-                by momentum-to-charge ratio:
-              </p>
-              <Formula>Bρ = p / q = √(2mE) / q</Formula>
-              <p>
-                When comparing ions accelerated to the same kinetic energy, rigidity scales as 1/q.
-                When comparing ions accelerated through the same electrostatic potential:
-              </p>
-              <Formula>Bρ = √(2mqV) / q = √(2mV / q) ∝ 1 / √q</Formula>
-              <p>
-                Higher charge states reduce the ampere-turns required in LEBT analyzing dipoles,
-                switching magnets, and quadrupole doublets—reducing magnet weight, power supply
-                draw, and cooling overhead while keeping beamline optics below iron saturation.
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <SectionHeading number="04" id="stripper-losses">
-              Eliminating Intermediate Stripping Losses and Emittance Growth
+            <SectionHeading number="04" id="infrastructure">
+              How Do High-Charge-State Ions Reduce Infrastructure Size and Cost?
             </SectionHeading>
             <p className="mt-7 text-lg leading-8 text-slate-300">
-              Facilities injecting low-charge ions (1+ to 6+) into high-energy linacs or
-              synchrotrons must accelerate the beam to an intermediate energy (approximately
-              1–10 MeV/u) and pass it through a carbon stripper foil or gas stripper cell.
-              Stripping imposes severe penalties:
+              Generating higher charge states directly at the ion source delivers compounding
+              engineering advantages across the accelerator pipeline:
             </p>
-            <ol className="mt-8 grid gap-4 md:grid-cols-3">
+            <ol className="mt-8 grid gap-4 md:grid-cols-2">
               {[
-                ["01", "Charge-state distribution attrition", "Collisional stripping produces a broad equilibrium distribution. Selecting one charge state downstream typically discards 85–95% of total particle current."],
-                ["02", "Emittance blow-up", "Coulomb scattering and energy-loss straggling irreversibly degrade transverse emittance and longitudinal energy spread."],
-                ["03", "Foil degradation", "High-intensity heavy ions cause thermal and displacement damage in nanometer-scale foils, producing rupture and beam downtime."],
+                ["01", "Shorter accelerating columns", "Target MeV energies require lower total voltage, reducing linear accelerator length and electrostatic column size."],
+                ["02", "Lower magnetic rigidity", "Higher-charge ions can be steered and focused with smaller, lower-power dipole and quadrupole magnets."],
+                ["03", "No lossy stripping stages", "Starting high at the source avoids accelerating, stripping, selecting one charge state, and accelerating again."],
+                ["04", "Lower high-voltage risk", "Operating at 100 kV instead of 1,000 kV reduces electrical arcing, shielding needs, and insulator maintenance."],
               ].map(([number, title, description]) => (
                 <li key={title} className="rounded-2xl border border-white/10 bg-white/[0.035] p-6">
                   <span className="font-mono text-xs text-cyan-300">{number}</span>
@@ -346,117 +390,59 @@ export default function HighChargeStateIonsPage() {
               <div className="grid md:grid-cols-2">
                 <div className="border-b border-cyan-400/15 p-7 md:border-r md:border-b-0">
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
-                    Pre-stripper path
+                    Legacy low-charge pipeline
                   </p>
-                  <p className="mt-5 text-sm leading-7 text-slate-300">
-                    Low-q source → pre-accelerator → foil stripper → broad charge-state fan-out
-                    → analyzing slits → main accelerator
-                  </p>
-                  <div className="mt-7 h-20 border-l border-cyan-300/30">
-                    {[44, 64, 84, 64, 44].map((width, index) => (
-                      <div key={index} className="mt-1 h-2 rounded-r bg-cyan-300/50" style={{ width: `${width}%` }} />
-                    ))}
+                  <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-slate-300">
+                    <span className="rounded-lg border border-white/10 px-3 py-2">1+ source</span>
+                    <span>→</span>
+                    <span className="rounded-lg border border-red-400/30 px-3 py-2">Long HV column</span>
+                    <span>→</span>
+                    <span className="rounded-lg border border-amber-400/30 px-3 py-2">Foil stripper</span>
+                    <span>→</span>
+                    <span className="rounded-lg border border-white/10 px-3 py-2">Main accelerator</span>
                   </div>
+                  <p className="mt-5 text-sm text-slate-400">Approximately 85–95% beam current discarded at stripping.</p>
                 </div>
                 <div className="p-7">
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
-                    Direct high-q path
+                    Direct high-charge pipeline
                   </p>
-                  <p className="mt-5 text-sm leading-7 text-slate-300">
-                    High-q source → compact LEBT → main accelerator
-                  </p>
-                  <div className="mt-7 h-20 rounded-full border border-cyan-300/40 bg-cyan-300/[0.08] px-8 py-7">
-                    <div className="h-6 w-3/4 rounded-full bg-cyan-300/50" />
+                  <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-slate-300">
+                    <span className="rounded-lg border border-cyan-400/30 px-3 py-2">10+ source</span>
+                    <span>→</span>
+                    <span className="rounded-lg border border-cyan-400/30 px-3 py-2">Short column</span>
+                    <span>→</span>
+                    <span className="rounded-lg border border-cyan-400/30 px-3 py-2">Compact magnets</span>
+                    <span>→</span>
+                    <span className="rounded-lg border border-cyan-400/30 px-3 py-2">Accelerator</span>
                   </div>
+                  <p className="mt-5 text-sm text-slate-400">No intermediate foil stage and a substantially smaller footprint.</p>
                 </div>
               </div>
               <figcaption className="border-t border-white/10 px-7 py-5 text-sm leading-6 text-slate-400">
-                Figure 2 placeholder: phase-space and particle-current comparison of stripper-loss
-                transport versus direct high-charge-state injection.
-              </figcaption>
-            </figure>
-          </section>
-
-          <section>
-            <SectionHeading number="05" id="extraction-tradeoffs">
-              Extraction and Transport Trade-Offs
-            </SectionHeading>
-            <div className="mt-7 space-y-8 text-lg leading-8 text-slate-300">
-              <div>
-                <h3 className="text-xl font-semibold text-white">
-                  Electrical Current vs. Particle Current
-                </h3>
-                <p className="mt-4">
-                  In multi-charge-state operations, electrical current (I<sub>elec</sub>) and
-                  particle flux (I<sub>part</sub>) diverge by a factor of q:
-                </p>
-                <Formula>I<sub>part</sub> [pμA] = I<sub>elec</sub> [eμA] / q</Formula>
-                <p>
-                  A 100 eμA beam of Au<sup>10+</sup> carries 10 pμA, or approximately
-                  6.24 × 10<sup>13</sup> ions/s. Because downstream target interactions depend on
-                  particle flux, high-charge-state sources must maintain both particle-current
-                  density and charge purity.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-white">Child-Langmuir Extraction Scaling</h3>
-                <p className="mt-4">
-                  In a space-charge-limited extraction diode of gap width d and extraction voltage U,
-                  maximum extractable electrical current density J<sub>CL</sub> scales as:
-                </p>
-                <Formula>
-                  J<sub>CL</sub> = (4/9) ε<sub>0</sub> √(2eq/m<sub>i</sub>) · U<sup>3/2</sup>/d<sup>2</sup>
-                </Formula>
-                <p>
-                  Electrical current density increases with √q, while particle current density
-                  (J<sub>part</sub> = J<sub>CL</sub>/q) scales inversely as 1/√q at fixed gap and
-                  voltage. Uncompensated space-charge repulsion immediately downstream of the plasma
-                  meniscus scales with q²—requiring multi-electrode accel-decel extraction systems,
-                  tight magnetic focusing close to the aperture, and careful vacuum management.
-                </p>
-              </div>
-            </div>
-
-            <figure className="mt-8 overflow-hidden rounded-3xl border border-dashed border-cyan-400/30 bg-slate-900/50 p-7">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
-                Figure 3 · Extraction meniscus
-              </p>
-              <div className="mt-7 grid min-h-48 items-center gap-4 sm:grid-cols-[1fr_1fr_1fr_1fr]">
-                {["Plasma electrode", "Suppressor", "Puller", "Ground"].map((label, index) => (
-                  <div key={label} className="relative flex h-36 items-end justify-center rounded-xl border border-white/10 bg-slate-950/50 p-3">
-                    <div
-                      className="absolute top-0 h-full rounded border border-cyan-300/30"
-                      style={{ width: index === 0 ? "34%" : "18%" }}
-                    />
-                    <span className="relative text-center text-xs font-medium text-slate-300">{label}</span>
-                  </div>
-                ))}
-              </div>
-              <figcaption className="mt-5 border-t border-white/10 pt-5 text-sm leading-6 text-slate-400">
-                Figure 3 placeholder: cross-section of an accel-decel extraction system showing the
-                plasma meniscus, uncompensated space-charge region, and magnetic focusing into the LEBT.
+                Figure 3: beamline footprint comparison for legacy low-charge stripping and direct
+                high-charge-state injection.
               </figcaption>
             </figure>
           </section>
 
           <section id="faq">
-            <SectionHeading number="06" id="faq-heading">
+            <SectionHeading number="05" id="faq-heading">
               Frequently Asked Questions
             </SectionHeading>
             <div className="mt-7 space-y-4">
               {[
                 [
-                  "How do you convert electrical microamps (eμA) to particle microamps (pμA)?",
-                  "Divide the measured electrical beam current by the ion charge state q. For example, 150 eμA of Xe15+ equals 10 pμA of actual particle flux.",
+                  "What is the difference between a heavy ion and a high-charge-state ion?",
+                  "A heavy ion refers to atomic mass, regardless of charge. A high-charge-state ion refers to how many electrons have been removed (q > 1+). An ion can be heavy without being highly charged, or highly charged without being heavy. Combining both—a high-charge-state heavy ion like Au13+—delivers high mass and high acceleration efficiency.",
                 ],
                 [
-                  "Why does higher q/A reduce RFQ and DTL accelerator length?",
-                  "Higher q/A increases ion velocity at a fixed extraction potential and raises energy gain per meter of accelerating gradient. Consequently, fewer RF cavities and lower total megavolts are required to reach a given MeV/u threshold.",
+                  "Why is charge-to-mass ratio critical in accelerator physics?",
+                  "The charge-to-mass ratio (q/A) determines how strongly an ion responds to electric and magnetic fields relative to its inertia. Heavy elements resist acceleration because of their large mass numbers. Increasing positive charge raises q/A, allowing standard voltages and compact magnetic fields to accelerate heavy species.",
                 ],
                 [
-                  "How does background vacuum pressure affect high-charge-state beam transport?",
-                  "Highly charged ions have large cross-sections for charge-exchange collisions with residual neutral gas. To prevent beam attenuation and charge-state degradation during LEBT transport, vacuum pressures typically must be maintained below 10-7 to 10-8 Torr.",
+                  "How do high-charge-state ions enable smaller particle accelerators?",
+                  "Kinetic energy scales linearly with charge state in electrostatic accelerators (E = qV) and quadratically in cyclotrons (E = Kq²/A). Higher charge states achieve the same final energy using shorter structures, lower RF power inputs, and smaller bending magnets.",
                 ],
               ].map(([question, answer]) => (
                 <details key={question} className="group rounded-2xl border border-white/10 bg-white/[0.035] open:bg-white/[0.055]">
@@ -470,7 +456,7 @@ export default function HighChargeStateIonsPage() {
             </div>
           </section>
 
-          <section className="border-t border-white/10 pt-10">
+          <section id="references" className="border-t border-white/10 pt-10">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan-300">
               Authoritative External References
             </p>
@@ -484,18 +470,7 @@ export default function HighChargeStateIonsPage() {
                 >
                   CERN Accelerator School: Ion Sources for High-Power Hadron Accelerators
                 </a>
-                {" "}— extraction, emittance, space-charge compensation, and q/A scaling.
-              </li>
-              <li>
-                <a
-                  href="https://www.jacow.org/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-cyan-300 underline decoration-cyan-400/30 underline-offset-4 hover:text-cyan-200"
-                >
-                  Joint Accelerator Conferences Website (JACoW)
-                </a>
-                {" "}— proceedings on cyclotron scaling, LEBT optics, and heavy-ion stripper losses.
+                {" "}— ion extraction, charge-to-mass ratios, and accelerator injection.
               </li>
               <li>
                 <a
@@ -506,7 +481,18 @@ export default function HighChargeStateIonsPage() {
                 >
                   NIST Atomic Spectra Database
                 </a>
-                {" "}— ionization-energy reference data across heavy elements.
+                {" "}— sequential electron binding-energy reference data.
+              </li>
+              <li>
+                <a
+                  href="https://cyclotron.lbl.gov/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-cyan-300 underline decoration-cyan-400/30 underline-offset-4 hover:text-cyan-200"
+                >
+                  Lawrence Berkeley National Laboratory 88-Inch Cyclotron
+                </a>
+                {" "}— cyclotron K-values, q²/A scaling, and heavy-ion beamlines.
               </li>
             </ul>
           </section>
