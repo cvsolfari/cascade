@@ -461,18 +461,32 @@ export default function HighChargeStateIonsPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan-300">
               Continue
             </p>
-            <Link
-              href="/high-charge-state-ions/applications"
-              className="mt-4 flex items-center justify-between rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.07] px-6 py-5 transition hover:border-cyan-300/40 hover:bg-cyan-400/[0.10]"
-            >
-              <div>
-                <p className="text-sm text-slate-400">Applications</p>
-                <p className="mt-1 font-semibold text-white">
-                  Where High-Charge-State Heavy Ions Are Used
-                </p>
-              </div>
-              <span aria-hidden="true" className="ml-4 text-xl text-cyan-300">→</span>
-            </Link>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <Link
+                href="/high-charge-state-ions/applications"
+                className="flex items-center justify-between rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.07] px-6 py-5 transition hover:border-cyan-300/40 hover:bg-cyan-400/[0.10]"
+              >
+                <div>
+                  <p className="text-sm text-slate-400">Applications</p>
+                  <p className="mt-1 font-semibold text-white">
+                    Where High-Charge-State Heavy Ions Are Used
+                  </p>
+                </div>
+                <span aria-hidden="true" className="ml-4 text-xl text-cyan-300">→</span>
+              </Link>
+              <Link
+                href="/high-charge-state-ions/production-challenges"
+                className="flex items-center justify-between rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.07] px-6 py-5 transition hover:border-cyan-300/40 hover:bg-cyan-400/[0.10]"
+              >
+                <div>
+                  <p className="text-sm text-slate-400">Production challenges</p>
+                  <p className="mt-1 font-semibold text-white">
+                    Why High-Charge-State Ions Are Difficult to Produce
+                  </p>
+                </div>
+                <span aria-hidden="true" className="ml-4 text-xl text-cyan-300">→</span>
+              </Link>
+            </div>
           </section>
 
           <section id="references" className="border-t border-white/10 pt-10">

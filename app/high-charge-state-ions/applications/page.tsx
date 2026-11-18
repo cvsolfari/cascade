@@ -362,17 +362,30 @@ export default function ApplicationsPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan-300">
               Series Navigation
             </p>
-            <Link
-              href="/high-charge-state-ions"
-              className="mt-4 flex items-center justify-between rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.07] px-6 py-5 transition hover:border-cyan-300/40 hover:bg-cyan-400/[0.10]"
-            >
-              <div>
-                <p className="text-sm text-slate-400">← Previous</p>
-                <p className="mt-1 font-semibold text-white">
-                  What Are High-Charge-State Ions?
-                </p>
-              </div>
-            </Link>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <Link
+                href="/high-charge-state-ions"
+                className="flex items-center rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.07] px-6 py-5 transition hover:border-cyan-300/40 hover:bg-cyan-400/[0.10]"
+              >
+                <div>
+                  <p className="text-sm text-slate-400">← Previous</p>
+                  <p className="mt-1 font-semibold text-white">
+                    What Are High-Charge-State Ions?
+                  </p>
+                </div>
+              </Link>
+              <Link
+                href="/high-charge-state-ions/production-challenges"
+                className="flex items-center justify-between rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.07] px-6 py-5 transition hover:border-cyan-300/40 hover:bg-cyan-400/[0.10]"
+              >
+                <div>
+                  <p className="text-sm text-slate-400">Next →</p>
+                  <p className="mt-1 font-semibold text-white">
+                    Why High-Charge-State Ions Are Difficult to Produce
+                  </p>
+                </div>
+              </Link>
+            </div>
           </section>
 
           <section className="border-t border-white/10 pt-10">
